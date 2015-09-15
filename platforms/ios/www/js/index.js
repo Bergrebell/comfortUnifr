@@ -25,10 +25,6 @@ $(document).ready(function() {
     // establish mqtt connection to server
     initClient();
     
-
-    
-    
-    
     $( document ).bind( "mobileinit", function() {
         // Make jQuery Mobile framework configuration changes here
         $.support.cors = true;
@@ -200,11 +196,11 @@ $('#submitButton').click(function(){
 // *** end submit function ***
                   
 
-    // *** start pushbot initialization ***
+// *** start pushbot initialization ***
     
-        PushbotsPlugin.initializeiOS("55f01018177959314e8b4567");
+    PushbotsPlugin.initializeiOS("55f01018177959314e8b4567");
 
-    // *** end pushbot initialization ***
+// *** end pushbot initialization ***
                   
 
 
