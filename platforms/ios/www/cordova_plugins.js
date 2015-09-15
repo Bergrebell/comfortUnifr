@@ -34,6 +34,13 @@ module.exports = [
         "clobbers": [
             "navigator.geolocation"
         ]
+    },
+    {
+        "file": "plugins/com.cordovaprogramming.carrier/carrier.js",
+        "id": "com.cordovaprogramming.carrier.carrier",
+        "clobbers": [
+            "carrier"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -41,7 +48,8 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.0.0",
     "com.pushbots.push": "1.2.7",
-    "cordova-plugin-geolocation": "1.0.1"
+    "cordova-plugin-geolocation": "1.0.1",
+    "com.cordovaprogramming.carrier": "1.0.2"
 }
 // BOTTOM OF METADATA
 });

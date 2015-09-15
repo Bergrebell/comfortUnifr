@@ -46,6 +46,7 @@
 		9E64F1026754434BBB4B0FE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B920DBD711634703B965D4F9 /* SystemConfiguration.framework */; };
 		26D51A64E3E049AC91243897 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2A37A4321D42B6A5CA42F1 /* CoreTelephony.framework */; };
 		F7BBAAA7393348419B96251F /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */; };
+		29E13A187DA24E55B99F9679 /* CarrierPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E2AB4802541A4B6C7B082 /* CarrierPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		EA2A37A4321D42B6A5CA42F1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		CC98F2A2490D4A5D934A03E8 /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		602E2AB4802541A4B6C7B082 /* CarrierPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CarrierPlugin.m"; path = "com.cordovaprogramming.carrier/CarrierPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		597AB50E38E64C2F9AD4E963 /* CarrierPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CarrierPlugin.h"; path = "com.cordovaprogramming.carrier/CarrierPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 				C83EB52024CB4E9CB9EDB855 /* PushbotsPlugin.h */,
 				6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */,
 				CC98F2A2490D4A5D934A03E8 /* CDVLocation.h */,
+				602E2AB4802541A4B6C7B082 /* CarrierPlugin.m */,
+				597AB50E38E64C2F9AD4E963 /* CarrierPlugin.h */,
 			);
 			name = Plugins;
 			path = ComfortUnifr/Plugins;
@@ -418,6 +423,7 @@
 				70AD3FC1A96F44A28C56B9DD /* PushbotsDelegate.m in Sources */,
 				463082D210F14EE4818B10DC /* PushbotsPlugin.m in Sources */,
 				F7BBAAA7393348419B96251F /* CDVLocation.m in Sources */,
+				29E13A187DA24E55B99F9679 /* CarrierPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

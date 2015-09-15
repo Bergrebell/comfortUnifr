@@ -43,6 +43,10 @@
                         {
                             "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CarrierPlugin\"><param name=\"ios-package\" value=\"CarrierPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -67,6 +71,9 @@
             "PACKAGE_NAME": "com.romankuepper.comfortunifr"
         },
         "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.romankuepper.comfortunifr"
+        },
+        "com.cordovaprogramming.carrier": {
             "PACKAGE_NAME": "com.romankuepper.comfortunifr"
         }
     },
