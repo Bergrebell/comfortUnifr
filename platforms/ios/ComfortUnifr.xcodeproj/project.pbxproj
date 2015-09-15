@@ -45,6 +45,7 @@
 		A6E67F507CF24670B629F52A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE71F78DA6A46808CE84044 /* CoreLocation.framework */; };
 		9E64F1026754434BBB4B0FE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B920DBD711634703B965D4F9 /* SystemConfiguration.framework */; };
 		26D51A64E3E049AC91243897 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2A37A4321D42B6A5CA42F1 /* CoreTelephony.framework */; };
+		F7BBAAA7393348419B96251F /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,8 @@
 		4BE71F78DA6A46808CE84044 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		B920DBD711634703B965D4F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		EA2A37A4321D42B6A5CA42F1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		CC98F2A2490D4A5D934A03E8 /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +229,8 @@
 				9FC1F37A4439473FA03450F0 /* PushbotsPlugin.m */,
 				D46DADB431044BEC99E4621F /* PushbotsDelegate.h */,
 				C83EB52024CB4E9CB9EDB855 /* PushbotsPlugin.h */,
+				6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */,
+				CC98F2A2490D4A5D934A03E8 /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = ComfortUnifr/Plugins;
@@ -412,6 +417,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				70AD3FC1A96F44A28C56B9DD /* PushbotsDelegate.m in Sources */,
 				463082D210F14EE4818B10DC /* PushbotsPlugin.m in Sources */,
+				F7BBAAA7393348419B96251F /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

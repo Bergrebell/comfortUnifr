@@ -17,6 +17,9 @@
     <feature name="PushbotsPlugin">
         <param name="ios-package" value="PushbotsPlugin" />
     </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <name>ComfortUnifr</name>

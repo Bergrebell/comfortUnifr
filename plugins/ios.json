@@ -10,7 +10,7 @@
                     "CoreLocation.framework": [
                         {
                             "xml": false,
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "SystemConfiguration.framework": [
@@ -39,6 +39,20 @@
                         {
                             "xml": "<feature name=\"PushbotsPlugin\"><param name=\"ios-package\" value=\"PushbotsPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string />",
+                            "count": 1
                         }
                     ]
                 }
@@ -50,6 +64,9 @@
             "PACKAGE_NAME": "com.romankuepper.comfortunifr"
         },
         "com.pushbots.push": {
+            "PACKAGE_NAME": "com.romankuepper.comfortunifr"
+        },
+        "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.romankuepper.comfortunifr"
         }
     },

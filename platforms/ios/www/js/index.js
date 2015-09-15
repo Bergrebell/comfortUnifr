@@ -27,6 +27,12 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        
+        function msg() {
+        
+            alert("test");
+        
+        }
     },
     // deviceready Event Handler
     //
@@ -42,6 +48,17 @@ var app = {
         if(PushbotsPlugin.isAndroid()){
             PushbotsPlugin.initializeAndroid("PUSHBOTS_APP_ID", "SENDER_ID");
         }
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
         
         
     },
