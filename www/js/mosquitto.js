@@ -97,6 +97,7 @@ function sendNoiseS() {
     message = new Paho.MQTT.Message(noiseSValue);
     message.destinationName = "iphone/" + window.localStorage.getItem('appUID') + "/noiseS";
     client.send(message);
+    window.location.href="question.html";
 }
 
 

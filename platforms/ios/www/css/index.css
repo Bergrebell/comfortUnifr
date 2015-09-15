@@ -88,7 +88,7 @@ baseFormScales,
 
 .active {
     background-color: #99CCFF !important;
-    border: 1px solid #606060;
+    border: 1px solid rgba(24,103,194,0.81);
 }
 
 #submitButton {
@@ -109,7 +109,8 @@ baseFormScales,
 input {
     /* webkit-appearance:none to override standard button design! */
     -webkit-appearance: none;
-    color: #3B444B;
+    color: rgba(24,103,194,0.81);
+    font-weight:400;
     width: 100%;
     height: 40px;
     text-decoration: none;
@@ -118,9 +119,8 @@ input {
     margin-top: 5px;
     font-size: 12px;
     font-weight: 700;
-    font-family: helvetica, arial, sans-serif;
-    border-radius: 2px;
-    border: 1px solid #606060;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;    border-radius: 2px;
+    border: 1px solid rgba(24,103,194,0.81);
     background-color: rgba(255,255,255, 0.8);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12);
@@ -134,7 +134,7 @@ baseActivityBox,
 #btn18, 
 #btn19, 
 #btn20 {
-    background-color: transparent; 
+    background-color: rgba(255,255,255, 0.8);
     background-repeat: no-repeat;  
     background-position: 16px 10px;
     vertical-align: middle; 
