@@ -10,6 +10,7 @@
 	NSLog(@"Registered token is %@", deviceToken);
 }
 
+
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
 	//Handle notification when the user click it while app is running in background or foreground.
 	if ( application.applicationState == UIApplicationStateActive ) {

@@ -199,6 +199,7 @@ $('#submitButton').click(function(){
 // *** start pushbot initialization ***
     
     PushbotsPlugin.initializeiOS("55f01018177959314e8b4567");
+    
 
 // *** end pushbot initialization ***
                   
