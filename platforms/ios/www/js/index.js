@@ -18,6 +18,13 @@ window.addEventListener('load', function () {
     // *** end sensor data ***
 }, false);
 
+document.addEventListener("resume", onResume, false);
+
+function onResume() {
+        console.log("app resumed");
+        window.location.href="index.html";
+}
+
 
 
 
