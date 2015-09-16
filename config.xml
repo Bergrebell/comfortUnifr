@@ -47,6 +47,8 @@
     <feature name="Accelerometer">
       <param name="ios-package" value="CDVAccelerometer" />
     </feature>
+    <!-- DisallowOverscroll verhindert das "schwimmen" der app - scrollen über die apphoehe hinaus -->
+    <preference name="DisallowOverscroll" value="true" />
     
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />

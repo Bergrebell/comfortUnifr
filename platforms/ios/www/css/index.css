@@ -45,9 +45,9 @@ p {
 }*/
 
 #activity {
+    position:relative;
     margin-top: -77px;
     z-index:10
-    height: 224;
     width: 312;
 }
 
@@ -207,6 +207,11 @@ baseActivityBox,
 #btn19, 
 #btn20 {
     background-position: 16px 4px;
+    z-index: 10;
+}
+
+#submitButton {
+    height: 45px;
 }
 
 
