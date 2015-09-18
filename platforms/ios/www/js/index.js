@@ -135,7 +135,7 @@ $('#activity > input[type="button"]').click(function(){
 
 
 // *** start submit function ***
-$('#submitButton').click(function(){
+$('.submitButton').click(function(){
 	console.log("submitButton clicked");
     
     // *** start add values of all active buttons and UID to globalData ***
