@@ -1,3 +1,5 @@
+console.log("This is the global data: " + globalData);
+
 
 var options = {
     ///Boolean - Whether grid lines are shown across the chart
