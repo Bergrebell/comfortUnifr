@@ -1,3 +1,4 @@
+var globalData = {};
 
 console.log("index.js loaded");
 
