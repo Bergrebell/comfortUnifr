@@ -3,10 +3,10 @@ console.log("index.js loaded");
 
 window.addEventListener('load', function () {
 // *** start sensor data ***
-        //first value of Noisesensor is always -120.0000 and therby unusable!
+        //first value of Noisesensor is always -0.0000 and therby unusable!
         function initNoiseSensor1(result) {
         };
-        console.log("Initialize Noisesensor the first time with -120.0000");
+        console.log("Initialize Noisesensor the first time with -0.0000");
         
         var firstNoise = carrier.getAverageNoise(initNoiseSensor1, onFailure);
         
@@ -141,7 +141,7 @@ $('.submitButton').click(function(){
     // *** start add values of all active buttons and UID to globalData ***
     $(".active").each( function () {
         console.log( $(this).parent().attr("id"));
-		console.log( $(this).val() );
+		console.log( $(this).attr("val") );
                 
         var nameU = $(this).parent().attr("id");
         var valueU = $(this).val();
@@ -181,7 +181,6 @@ $('.submitButton').click(function(){
     // *** start sensor data ***
     getNoise();
     getLighting();
-    
     
     function sendData() {
 
