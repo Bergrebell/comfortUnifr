@@ -144,7 +144,7 @@ $('.submitButton').click(function(){
 		console.log( $(this).attr("val") );
                 
         var nameU = $(this).parent().attr("id");
-        var valueU = $(this).val();
+        var valueU = $(this).attr("val");
         
         addToGlobal(nameU, valueU);
 	});
