@@ -67,6 +67,8 @@ $(document).ready(function() {
                 console.log('Row: '+i);
                 console.log('Noise: '+results.rows.item(i).noiseU);
                 console.log('Light: '+results.rows.item(i).lightU);
+                console.log('NoiseS: '+results.rows.item(i).noiseS);
+                console.log('LightS: '+results.rows.item(i).lightS);
             }
         }
         function error(err){
