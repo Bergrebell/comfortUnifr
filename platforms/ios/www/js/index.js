@@ -61,6 +61,12 @@ $(document).ready(function() {
     }else{
       //Local storage is not set, hence first time launch. set the local storage item
       window.localStorage.setItem('launchCount5',1);
+      window.localStorage.setItem('Reading', 0);
+      window.localStorage.setItem('Computer', 0);
+      window.localStorage.setItem('Meeting', 0);
+      window.localStorage.setItem('Moving', 0);
+      window.localStorage.setItem('Other', 0);
+      
       console.log("first time app launch");
       
       // *** start create appID ***
@@ -154,6 +160,74 @@ $('.submitButton').click(function(){
     var appUID = window.localStorage.getItem('appUID');
     addToGlobal("appID", appUID);
     // *** end add values of all active buttons to globalData ***
+    
+    
+    
+    
+    
+    
+    
+    // *** start adding activity values to localstorage ***
+    
+    
+    console.log("localvar: " + window.localStorage.getItem('Reading') );
+
+
+    activityVal = globalData.activity;
+    console.log("Act: " + activityVal);
+    
+    if (activityVal == "reading") {
+        console.log("activityVal: reading");
+        var readingInt = parseInt(window.localStorage.getItem('Reading'));
+        console.log("readingInt: " + readingInt);
+        var readingIntNew = readingInt + 1;
+        window.localStorage.setItem('Reading', readingIntNew);
+        console.log("localvar reading new: " + window.localStorage.getItem('Reading') );
+        
+    } else if (activityVal == "computer") {
+        console.log("activityVal: computer");
+        var computerInt = parseInt(window.localStorage.getItem('Computer'));
+        console.log("computerInt: " + computerInt);
+        var computerIntNew = computerInt + 1;
+        window.localStorage.setItem('Computer', computerIntNew);
+        console.log("localvar computer new: " + window.localStorage.getItem('Computer') );
+    
+    } else if (activityVal == "meeting") {
+        console.log("activityVal: meeting");
+        var meetingInt = parseInt(window.localStorage.getItem('Meeting'));
+        console.log("meetingInt: " + meetingInt);
+        var meetingIntNew = meetingInt + 1;
+        window.localStorage.setItem('Meeting', meetingIntNew);
+        console.log("localvar meeting new: " + window.localStorage.getItem('Meeting') );
+    
+    } else if (activityVal == "moving") {
+        console.log("activityVal: moving");
+        var movingInt = parseInt(window.localStorage.getItem('Moving'));
+        console.log("movingInt: " + movingInt);
+        var movingIntNew = movingInt + 1;
+        window.localStorage.setItem('Moving', movingIntNew);
+        console.log("localvar moving new: " + window.localStorage.getItem('Moving') );
+    
+    } else {
+        console.log("activityVal: other");
+        var otherInt = parseInt(window.localStorage.getItem('Other'));
+        console.log("otherInt: " + otherInt);
+        var otherIntNew = otherInt + 1;
+        window.localStorage.setItem('Other', otherIntNew);
+        console.log("localvar other new: " + window.localStorage.getItem('Other') );
+    
+    }
+
+
+
+
+    // *** end adding activity values to localstorage ***
+    
+    
+
+
+
+
 
     
     // *** start define sensor functions ***
@@ -217,7 +291,7 @@ $('.submitButton').click(function(){
                     }
                     function successDB(){
                         console.log('Successfully created tables');
-                        window.location.href="question.html";
+                        //window.location.href="question.html";
                     }
 
         
