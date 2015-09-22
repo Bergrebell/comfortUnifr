@@ -172,27 +172,27 @@ $(document).ready(function() {
 
         var activityData = [
         {
-            value: readingVal,
+            value: window.localStorage.getItem('Reading'),
             label: "Reading",
             color: "blue"
         },
         {
-            value: computerVal,
+            value: window.localStorage.getItem('Computer'),
             label: "On Computer",
             color: "green"
         },
         {
-            value: meetingVal,
+            value: window.localStorage.getItem('Meeting'),
             label: "In Meeting",
             color: "red"
         },
         {
-            value: movingVal,
+            value: window.localStorage.getItem('Moving'),
             label: "Moving",
             color: "yellow"
         },
         {
-            value: otherVal,
+            value: window.localStorage.getItem('Other'),
             label: "Other",
             color: "grey"
         },

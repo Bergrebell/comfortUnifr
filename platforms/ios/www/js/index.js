@@ -215,7 +215,6 @@ $('.submitButton').click(function(){
         var otherIntNew = otherInt + 1;
         window.localStorage.setItem('Other', otherIntNew);
         console.log("localvar other new: " + window.localStorage.getItem('Other') );
-    
     }
 
 
@@ -240,6 +239,7 @@ $('.submitButton').click(function(){
             addToGlobal("NoiseS", result);
             // sending data in callback
             sendData();
+
         };
         
         function getNoise() {
@@ -291,7 +291,7 @@ $('.submitButton').click(function(){
                     }
                     function successDB(){
                         console.log('Successfully created tables');
-                        //window.location.href="question.html";
+                        window.location.href="question.html";
                     }
 
         
@@ -309,6 +309,7 @@ $('.submitButton').click(function(){
     
     function sendData() {
 
+    try {
         sendAppID();
         sendActivity();
         sendNoise();
@@ -318,6 +319,11 @@ $('.submitButton').click(function(){
         sendLightS();
         //sendJSON();
         addGlobalToLocalDB();
+    }
+    catch(err) {
+        alert("There seems to be a problem with the connection to the Server! Please connect to the internet an restart the app.");
+    }
+    
     }
     
     // *** end sensor data ***
