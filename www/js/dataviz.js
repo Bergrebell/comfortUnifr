@@ -58,12 +58,12 @@ $(document).ready(function() {
 
 
         function runSelect(t){
-            t.executeSql('SELECT * FROM comfort', [], success, error);
+            t.executeSql('SELECT * FROM comfort LIMIT 20 OFFSET (SELECT COUNT(*) FROM comfort)-20;', [], success, error);
         }
         function success(t, results){
             console.log('Number of rows: '+results.rows.length);
             
-            for(var i = 0; i < results.rows.length; i++){
+            for(var i = 0; i < 20; i++){
                 console.log('Row: '+i);
                 console.log('Noise: '+results.rows.item(i).noiseU);
                 console.log('Light: '+results.rows.item(i).lightU);
