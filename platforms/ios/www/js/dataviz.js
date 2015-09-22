@@ -59,27 +59,33 @@ $(document).ready(function() {
         // create empty data arrays
             var noiseUarray = [];
             var noiseSarray = [];
+            var lightUarray = [];
+            var lightSarray = [];
 
 
         function runSelect(t){
-            t.executeSql('SELECT * FROM comfort LIMIT 10 OFFSET (SELECT COUNT(*) FROM comfort)-10;', [], success, error);
+            t.executeSql('SELECT * FROM comfort LIMIT 20 OFFSET (SELECT COUNT(*) FROM comfort)-20;', [], success, error);
         }
         function success(t, results){
             console.log('Number of rows: '+results.rows.length);
             
-            for(var i = 0; i < 10; i++){
+            for(var i = 0; i < 20; i++){
                 console.log('Row: '+i);
                 console.log('Noise: '+results.rows.item(i).noiseU);
                 console.log('NoiseS: '+results.rows.item(i).noiseS);
                 noiseUarray.push(results.rows.item(i).noiseU);
-                noiseSarray.push(results.rows.item(i).noiseS);
+                noiseSarray.push(results.rows.item(i).noiseS*70);
                 
                 console.log('Light: '+results.rows.item(i).lightU);
                 console.log('LightS: '+results.rows.item(i).lightS);
+                lightUarray.push(results.rows.item(i).lightU);
+                lightSarray.push(results.rows.item(i).lightS*5);
             }
                 console.log("Senserarray: "+ noiseSarray);
                 console.log("Userarray: " + noiseUarray);
                 var noiseLineChart = new Chart(ctx).Line(noiseData, options);
+                var lightLineChart = new Chart(ctx2).Line(lightData, options);
+                var activityPiechart = new Chart(ctx3).Pie(activityData);
         }
         function error(err){
             console.log('There was an error processing the SQL: '+err);
@@ -95,7 +101,7 @@ $(document).ready(function() {
         var ctx = $("#noiseCanvas").get(0).getContext("2d");
 
         var noiseData = {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
             datasets: [
                 {
                     label: "My First dataset",
@@ -128,7 +134,7 @@ $(document).ready(function() {
         var ctx2 = $("#lightCanvas").get(0).getContext("2d");
 
         var lightData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
             datasets: [
                 {
                     label: "My First dataset",
@@ -138,7 +144,7 @@ $(document).ready(function() {
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "#fff",
                     pointHighlightStroke: "rgba(220,220,220,1)",
-                    data: [65, 59, 80, 81, 56, 55, 40]
+                    data: lightUarray
                 },
                 {
                     label: "My Second dataset",
@@ -148,14 +154,54 @@ $(document).ready(function() {
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "#fff",
                     pointHighlightStroke: "rgba(151,187,205,1)",
-                    data: [28, 48, 40, 19, 86, 27, 90]
+                    data: lightSarray
                 }
             ]
         };
+        
+        
+        
+        
+        var ctx3 = $("#activityCanvas").get(0).getContext("2d");
+        
+        var readingVal = 5;
+        var computerVal = 3;
+        var meetingVal = 10;
+        var movingVal = 1;
+        var otherVal = 20;
+
+        var activityData = [
+        {
+            value: readingVal,
+            label: "Reading",
+            color: "blue"
+        },
+        {
+            value: computerVal,
+            label: "On Computer",
+            color: "green"
+        },
+        {
+            value: meetingVal,
+            label: "In Meeting",
+            color: "blue"
+        },
+        {
+            value: movingVal,
+            label: "Moving",
+            color: "yellow"
+        },
+        {
+            value: otherVal,
+            label: "Other",
+            color: "grey"
+        },
+        
+        ];
 
 
 
-        var lightLineChart = new Chart(ctx2).Line(lightData, options);
+        
     
 
 });
