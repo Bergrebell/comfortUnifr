@@ -154,6 +154,10 @@ $('.submitButton').click(function(){
     var appUID = window.localStorage.getItem('appUID');
     addToGlobal("appID", appUID);
     // *** end add values of all active buttons to globalData ***
+    
+    
+    
+    
 
     
     // *** start define sensor functions ***

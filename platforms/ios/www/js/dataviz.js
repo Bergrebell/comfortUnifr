@@ -184,7 +184,7 @@ $(document).ready(function() {
         {
             value: meetingVal,
             label: "In Meeting",
-            color: "blue"
+            color: "red"
         },
         {
             value: movingVal,
