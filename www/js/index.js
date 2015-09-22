@@ -178,6 +178,8 @@ $('.submitButton').click(function(){
     
     // *** end define sensor functions ***
     
+    
+    
     // *** start local database ***
     
         function addGlobalToLocalDB() {
@@ -223,9 +225,6 @@ $('.submitButton').click(function(){
             
         
         }
-        
-    
-    
     // *** end local databse ***
    
     
