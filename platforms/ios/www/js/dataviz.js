@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 
     // ***********************************************************
-        // should connect to the existin localDB database
+        // connect to the existin localDB database
         var db = window.openDatabase("localDB", "1.0", "Local DB", 10000000);
         db.transaction(runSelect, error);
 
@@ -87,7 +87,7 @@ $(document).ready(function() {
     var ctx = $("#noiseCanvas").get(0).getContext("2d");
 
     var noiseData = {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"],
         datasets: [
             {
                 label: "My First dataset",

@@ -166,7 +166,6 @@ $('.submitButton').click(function(){
             addToGlobal("NoiseS", result);
             // sending data in callback
             sendData();
-            addGlobalToLocalDB();
         };
         
         function getNoise() {
@@ -207,7 +206,6 @@ $('.submitButton').click(function(){
                     console.log("DB ready values: " + noiseUdb + ' ' + lightUdb + ' ' + lightSdb + ' ' + noiseSdb);
                 
                 
-                
                     function runTransaction(t){
                         t.executeSql('CREATE TABLE IF NOT EXISTS comfort (id unique, noiseS, noiseU, lightS, lightU, date)');
                         t.executeSql("INSERT INTO comfort (noiseU, lightU, noiseS, lightS) VALUES ("+noiseUdb+", "+lightUdb+", "+noiseSdb+", "+lightSdb+")");
@@ -217,6 +215,7 @@ $('.submitButton').click(function(){
                     }
                     function successDB(){
                         console.log('Successfully created tables');
+                        window.location.href="question.html";
                     }
 
         
@@ -245,6 +244,7 @@ $('.submitButton').click(function(){
         sendNoiseS();
         sendLightS();
         //sendJSON();
+        addGlobalToLocalDB();
     }
     
     // *** end sensor data ***
