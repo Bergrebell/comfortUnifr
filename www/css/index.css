@@ -187,6 +187,24 @@ baseActivityBox,
 
 }
 
+baseCanvas,
+#noiseCanvas,
+#lightCanvas,
+#activityCanvas {
+    position: relative;
+    height: 150px;
+    width: 310px;
+    padding-left: 5px;
+}
+
+#noiseCanvas {
+    padding-top: 5px;
+}
+
+#activityCanvas {
+    float: left;
+}
+
 
 
 
@@ -222,9 +240,37 @@ baseActivityBox,
     z-index: 10;
 }
 
-#submitButton {
+.submitButton {
     height: 47px;
+    margin-top: 6px;
 }
+
+baseCanvasDiv,
+#noiseCanvasDiv,
+#lightCanvasDiv,
+#activityCanvasDiv {
+    position: relative;
+    height: 130px;
+    width: 310px;
+    margin-right: 5px;
+    margin-bottom: 12px;
+}
+
+
+
+/* canvas settings - page2 */
+baseCanvas,
+#noiseCanvas,
+#lightCanvas,
+#activityCanvas {
+    position: relative;
+    height: 130px;
+    width: 300px;
+    margin-right: 5px;
+}
+
+
+
 
 
 }
@@ -232,77 +278,4 @@ baseActivityBox,
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-baseFormScale,
-#btn1,
-#btn5,
-#btn6,
-#btn10,
-#btn11,
-#btn15 {
-	background-color: rgba(255,255,255, 0.8); 
-    background-repeat: no-repeat;  
-    background-position: 2px 4px;  
-    vertical-align: middle; 
-}*/
-
-
-/*
-#btn1 {
-	background-image: url(icons/hot.png);
-}
-
-#btn5 {
-	background-image: url(icons/cold.png);
-}
-
-#btn6 {
-	background-image: url(icons/lightOn.png);
-}
-
-#btn10 {
-	background-image: url(icons/lightOff.png);
-}
-
-#btn11 {
-	background-image: url(icons/speakerOn.png);
-}
-
-#btn15 {
-	background-image: url(icons/speakerOff.png);
-}*/
-
-/*#header {
-	overflow: hidden;
-}
-
-
-#header1 {
-		width: 31vw;
-		float:left;
-
-}
-
-#header2 {
-		width: 31vw;
-		float:left;
-
-}
-
-#header3 {
-		width: 31vw;
-		float:left;
-
-}*/
 

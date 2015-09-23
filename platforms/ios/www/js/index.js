@@ -56,6 +56,7 @@ $(document).ready(function() {
        console.log("second time app launch");
        var appUID = window.localStorage.getItem('appUID');
        console.log("Old AppID: "+ appUID);
+       
 
        
     }else{
@@ -308,22 +309,20 @@ $('.submitButton').click(function(){
     getLighting();
     
     function sendData() {
-
-    try {
-        sendAppID();
-        sendActivity();
-        sendNoise();
-        sendLighting();
-        sendTemp();
-        sendNoiseS();
-        sendLightS();
-        //sendJSON();
-        addGlobalToLocalDB();
-    }
-    catch(err) {
-        alert("There seems to be a problem with the connection to the Server! Please connect to the internet an restart the app.");
-    }
-    
+        try {
+            sendAppID();
+            sendActivity();
+            sendNoise();
+            sendLighting();
+            sendTemp();
+            sendNoiseS();
+            sendLightS();
+            //sendJSON();
+            addGlobalToLocalDB();
+        }
+        catch(err) {
+            alert("There seems to be a problem with the connection to the Server! Please connect to the internet an restart the app.");
+        }
     }
     
     // *** end sensor data ***

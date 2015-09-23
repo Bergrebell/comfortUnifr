@@ -67,26 +67,53 @@ $(document).ready(function() {
             t.executeSql('SELECT * FROM comfort LIMIT 20 OFFSET (SELECT COUNT(*) FROM comfort)-20;', [], success, error);
         }
         function success(t, results){
-            console.log('Number of rows: '+results.rows.length);
             
-            for(var i = 0; i < 20; i++){
-                console.log('Row: '+i);
-                console.log('Noise: '+results.rows.item(i).noiseU);
-                console.log('NoiseS: '+results.rows.item(i).noiseS);
-                noiseUarray.push(results.rows.item(i).noiseU);
-                noiseSarray.push(results.rows.item(i).noiseS*70);
-                
-                console.log('Light: '+results.rows.item(i).lightU);
-                console.log('LightS: '+results.rows.item(i).lightS);
-                lightUarray.push(results.rows.item(i).lightU);
-                lightSarray.push(results.rows.item(i).lightS*5);
-            }
+            var rowLength = results.rows.length;
+            console.log('Number of rows: '+ rowLength);
+            
+            if (rowLength < 20) {
+            
+                for(var i = 0; i < rowLength; i++){
+                    console.log('Row: '+i);
+                    console.log('Noise: '+results.rows.item(i).noiseU);
+                    console.log('NoiseS: '+results.rows.item(i).noiseS);
+                    noiseUarray.push(results.rows.item(i).noiseU);
+                    noiseSarray.push(results.rows.item(i).noiseS*100);
+                    
+                    console.log('Light: '+results.rows.item(i).lightU);
+                    console.log('LightS: '+results.rows.item(i).lightS);
+                    lightUarray.push(results.rows.item(i).lightU);
+                    lightSarray.push(results.rows.item(i).lightS*5);
+                }
                 console.log("Senserarray: "+ noiseSarray);
                 console.log("Userarray: " + noiseUarray);
                 var noiseLineChart = new Chart(ctx).Line(noiseData, options);
                 var lightLineChart = new Chart(ctx2).Line(lightData, options);
                 var activityPiechart = new Chart(ctx3).Pie(activityData);
+                
+                
+            } else {
+                for(var i = 0; i < 20; i++){
+                    console.log('Row: '+i);
+                    console.log('Noise: '+results.rows.item(i).noiseU);
+                    console.log('NoiseS: '+results.rows.item(i).noiseS);
+                    noiseUarray.push(results.rows.item(i).noiseU);
+                    noiseSarray.push(results.rows.item(i).noiseS*70);
+                    
+                    console.log('Light: '+results.rows.item(i).lightU);
+                    console.log('LightS: '+results.rows.item(i).lightS);
+                    lightUarray.push(results.rows.item(i).lightU);
+                    lightSarray.push(results.rows.item(i).lightS*5);
+                }
+                console.log("Senserarray: "+ noiseSarray);
+                console.log("Userarray: " + noiseUarray);
+                var noiseLineChart = new Chart(ctx).Line(noiseData, options);
+                var lightLineChart = new Chart(ctx2).Line(lightData, options);
+                var activityPiechart = new Chart(ctx3).Pie(activityData);
+                
+            }
         }
+            
         function error(err){
             console.log('There was an error processing the SQL: '+err);
         }
@@ -101,7 +128,7 @@ $(document).ready(function() {
         var ctx = $("#noiseCanvas").get(0).getContext("2d");
 
         var noiseData = {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
             datasets: [
                 {
                     label: "My First dataset",
@@ -134,7 +161,7 @@ $(document).ready(function() {
         var ctx2 = $("#lightCanvas").get(0).getContext("2d");
 
         var lightData = {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
             datasets: [
                 {
                     label: "My First dataset",
@@ -174,35 +201,30 @@ $(document).ready(function() {
         {
             value: window.localStorage.getItem('Reading'),
             label: "Reading",
-            color: "blue"
+            color: "#E8D0A9"
         },
         {
             value: window.localStorage.getItem('Computer'),
             label: "On Computer",
-            color: "green"
+            color: "#B7AFA3"
         },
         {
             value: window.localStorage.getItem('Meeting'),
             label: "In Meeting",
-            color: "red"
+            color: "#C1DAD6"
         },
         {
             value: window.localStorage.getItem('Moving'),
             label: "Moving",
-            color: "yellow"
+            color: "#ACD1E9"
         },
         {
             value: window.localStorage.getItem('Other'),
             label: "Other",
-            color: "grey"
+            color: "#6D929B"
         },
         
         ];
-
-
-
-        
-    
 
 });
 

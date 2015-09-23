@@ -10,6 +10,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
         <script src="js/Chart.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
 
 
         <title>Exit page</title>
@@ -17,9 +18,18 @@
 
     <body>
         
-        <canvas id="noiseCanvas" width="310" height="180"></canvas>
-        <canvas id="lightCanvas" width="310" height="180"></canvas>
-        <canvas id="activityCanvas" width="310" height="180"></canvas>
+        <div id="noiseCanvasDiv">
+            <p>Noise</p>
+            <canvas id="noiseCanvas" ></canvas>
+        </div>
+        <div id="lightCanvasDiv">
+            <p>Light</p>
+            <canvas id="lightCanvas"></canvas>
+        </div>
+        <div id="activityCanvasDiv">
+            <p>Activity</p>
+            <canvas id="activityCanvas"></canvas>
+        </div>
 
     
     
