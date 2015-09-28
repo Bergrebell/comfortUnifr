@@ -46,7 +46,6 @@
 		9E64F1026754434BBB4B0FE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B920DBD711634703B965D4F9 /* SystemConfiguration.framework */; };
 		A6E67F507CF24670B629F52A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE71F78DA6A46808CE84044 /* CoreLocation.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		F7BBAAA7393348419B96251F /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +97,6 @@
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		602E2AB4802541A4B6C7B082 /* CarrierPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarrierPlugin.m; path = com.cordovaprogramming.carrier/CarrierPlugin.m; sourceTree = "<group>"; };
 		6869E504E3B342FF8529D315 /* Pushbots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pushbots.framework; path = ComfortUnifr/Plugins/com.pushbots.push/Pushbots.framework; sourceTree = "<group>"; };
-		6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		9FC1F37A4439473FA03450F0 /* PushbotsPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushbotsPlugin.m; path = com.pushbots.push/PushbotsPlugin.m; sourceTree = "<group>"; };
 		B920DBD711634703B965D4F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C83EB52024CB4E9CB9EDB855 /* PushbotsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushbotsPlugin.h; path = com.pushbots.push/PushbotsPlugin.h; sourceTree = "<group>"; };
-		CC98F2A2490D4A5D934A03E8 /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; };
 		D17F09A67F034D41A9317628 /* PushbotsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushbotsDelegate.m; path = com.pushbots.push/PushbotsDelegate.m; sourceTree = "<group>"; };
 		D46DADB431044BEC99E4621F /* PushbotsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushbotsDelegate.h; path = com.pushbots.push/PushbotsDelegate.h; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
@@ -232,8 +229,6 @@
 				9FC1F37A4439473FA03450F0 /* PushbotsPlugin.m */,
 				D46DADB431044BEC99E4621F /* PushbotsDelegate.h */,
 				C83EB52024CB4E9CB9EDB855 /* PushbotsPlugin.h */,
-				6B07962FCE6345CAA8B10BD1 /* CDVLocation.m */,
-				CC98F2A2490D4A5D934A03E8 /* CDVLocation.h */,
 				602E2AB4802541A4B6C7B082 /* CarrierPlugin.m */,
 				597AB50E38E64C2F9AD4E963 /* CarrierPlugin.h */,
 			);
@@ -317,7 +312,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 510;
+				LastUpgradeCheck = 700;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ComfortUnifr" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -422,7 +417,6 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				70AD3FC1A96F44A28C56B9DD /* PushbotsDelegate.m in Sources */,
 				463082D210F14EE4818B10DC /* PushbotsPlugin.m in Sources */,
-				F7BBAAA7393348419B96251F /* CDVLocation.m in Sources */,
 				29E13A187DA24E55B99F9679 /* CarrierPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +451,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "ComfortUnifr/ComfortUnifr-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -469,6 +464,7 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romankuepper.comfortunifr;
 				PRODUCT_NAME = ComfortUnifr;
 				PROVISIONING_PROFILE = "f5b942fe-f8c4-4dcb-a76d-1052e0cfbf54";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -506,6 +502,7 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romankuepper.comfortunifr;
 				PRODUCT_NAME = ComfortUnifr;
 				PROVISIONING_PROFILE = "f5b942fe-f8c4-4dcb-a76d-1052e0cfbf54";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -525,6 +522,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
@@ -569,6 +568,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";

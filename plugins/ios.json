@@ -10,7 +10,7 @@
                     "CoreLocation.framework": [
                         {
                             "xml": false,
-                            "count": 2
+                            "count": 1
                         }
                     ],
                     "SystemConfiguration.framework": [
@@ -41,10 +41,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"CarrierPlugin\"><param name=\"ios-package\" value=\"CarrierPlugin\" /></feature>",
                             "count": 1
                         }
@@ -53,12 +49,7 @@
             },
             "*-Info.plist": {
                 "parents": {
-                    "NSLocationWhenInUseUsageDescription": [
-                        {
-                            "xml": "<string />",
-                            "count": 1
-                        }
-                    ]
+                    "NSLocationWhenInUseUsageDescription": []
                 }
             }
         }
@@ -68,9 +59,6 @@
             "PACKAGE_NAME": "com.romankuepper.comfortunifr"
         },
         "com.pushbots.push": {
-            "PACKAGE_NAME": "com.romankuepper.comfortunifr"
-        },
-        "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.romankuepper.comfortunifr"
         },
         "com.cordovaprogramming.carrier": {

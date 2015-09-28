@@ -17,9 +17,6 @@
     <feature name="PushbotsPlugin">
         <param name="ios-package" value="PushbotsPlugin" />
     </feature>
-    <feature name="Geolocation">
-        <param name="ios-package" value="CDVLocation" />
-    </feature>
     <feature name="CarrierPlugin">
         <param name="ios-package" value="CarrierPlugin" />
     </feature>

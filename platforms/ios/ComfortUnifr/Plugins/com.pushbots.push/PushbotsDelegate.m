@@ -6,6 +6,7 @@
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // This method will be called everytime you open the app
     // Register the deviceToken on Pushbots
+    [[Pushbots sharedInstance] tag:@"testtag"];
     [[Pushbots sharedInstance] registerOnPushbots:deviceToken];
 	NSLog(@"Registered token is %@", deviceToken);
 }
@@ -16,7 +17,7 @@
 	if ( application.applicationState == UIApplicationStateActive ) {
 		NSLog(@"app is in foreground");
 	} else {
-		[[Pushbots sharedInstance] receivedPush:userInfo];
+        NSLog(@"app is in background");
 	}
 }
 
