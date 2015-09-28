@@ -7,19 +7,19 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.pushbots.push": {
-        "source": {
-            "type": "registry",
-            "id": "com.pushbots.push"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "com.cordovaprogramming.carrier": {
         "source": {
             "type": "git",
             "url": "https://github.com/Bergrebell/carrier",
             "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.pushbots.push": {
+        "source": {
+            "type": "registry",
+            "id": "com.pushbots.push"
         },
         "is_top_level": true,
         "variables": {}

@@ -8,9 +8,9 @@
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		26D51A64E3E049AC91243897 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2A37A4321D42B6A5CA42F1 /* CoreTelephony.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		29E13A187DA24E55B99F9679 /* CarrierPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E2AB4802541A4B6C7B082 /* CarrierPlugin.m */; };
+		2A750AD80A3846E6A5A4B4F9 /* Pushbots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6854DE907C9B4A31B9A31C53 /* Pushbots.framework */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
@@ -29,10 +29,8 @@
 		30B4F30219D5E07200D9F7D8 /* Default-Landscape-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */; };
 		30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C1856519D5FC0A00212699 /* icon-60@3x.png */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
-		463082D210F14EE4818B10DC /* PushbotsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1F37A4439473FA03450F0 /* PushbotsPlugin.m */; };
+		3E81CDE201F343C884946012 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4771B26B30E4BCA8492EEF9 /* CoreTelephony.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
-		5D6E45A5B7F44189BBD2FEDC /* Pushbots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6869E504E3B342FF8529D315 /* Pushbots.framework */; };
-		70AD3FC1A96F44A28C56B9DD /* PushbotsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D17F09A67F034D41A9317628 /* PushbotsDelegate.m */; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
 		7E7966E01810823500FA85AD /* icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D61810823500FA85AD /* icon-50.png */; };
@@ -43,9 +41,11 @@
 		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
-		9E64F1026754434BBB4B0FE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B920DBD711634703B965D4F9 /* SystemConfiguration.framework */; };
-		A6E67F507CF24670B629F52A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE71F78DA6A46808CE84044 /* CoreLocation.framework */; };
+		820D8D876E464F14AC7BA080 /* PushbotsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A52FA723B4D5483BB1355638 /* PushbotsPlugin.m */; };
+		9CAB7FD48FFF42BD953EB736 /* PushbotsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2596F67C3B460BAAF4EF40 /* PushbotsDelegate.m */; };
+		B2987F8C0FF5479D9B1EB433 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EA002B7545454A8014FB1A /* CoreLocation.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		E419432A6B5347C4BCECD343 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847AE8C4871D4DF8A54A17E9 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,11 +92,13 @@
 		30C1856519D5FC0A00212699 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ComfortUnifr-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComfortUnifr-Prefix.pch"; sourceTree = "<group>"; };
-		4BE71F78DA6A46808CE84044 /* CoreLocation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4900D092EE5741838D61F97B /* PushbotsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushbotsPlugin.h; path = com.pushbots.push/PushbotsPlugin.h; sourceTree = "<group>"; };
 		597AB50E38E64C2F9AD4E963 /* CarrierPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarrierPlugin.h; path = com.cordovaprogramming.carrier/CarrierPlugin.h; sourceTree = "<group>"; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		602E2AB4802541A4B6C7B082 /* CarrierPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarrierPlugin.m; path = com.cordovaprogramming.carrier/CarrierPlugin.m; sourceTree = "<group>"; };
-		6869E504E3B342FF8529D315 /* Pushbots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pushbots.framework; path = ComfortUnifr/Plugins/com.pushbots.push/Pushbots.framework; sourceTree = "<group>"; };
+		61EA002B7545454A8014FB1A /* CoreLocation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6854DE907C9B4A31B9A31C53 /* Pushbots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pushbots.framework; path = ComfortUnifr/Plugins/com.pushbots.push/Pushbots.framework; sourceTree = "<group>"; };
+		7B2596F67C3B460BAAF4EF40 /* PushbotsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushbotsDelegate.m; path = com.pushbots.push/PushbotsDelegate.m; sourceTree = "<group>"; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
@@ -107,14 +109,12 @@
 		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		83240CBC1EA44A4DA81B4A8F /* PushbotsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushbotsDelegate.h; path = com.pushbots.push/PushbotsDelegate.h; sourceTree = "<group>"; };
+		847AE8C4871D4DF8A54A17E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* ComfortUnifr-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ComfortUnifr-Info.plist"; path = "../ComfortUnifr-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		9FC1F37A4439473FA03450F0 /* PushbotsPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushbotsPlugin.m; path = com.pushbots.push/PushbotsPlugin.m; sourceTree = "<group>"; };
-		B920DBD711634703B965D4F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C83EB52024CB4E9CB9EDB855 /* PushbotsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushbotsPlugin.h; path = com.pushbots.push/PushbotsPlugin.h; sourceTree = "<group>"; };
-		D17F09A67F034D41A9317628 /* PushbotsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushbotsDelegate.m; path = com.pushbots.push/PushbotsDelegate.m; sourceTree = "<group>"; };
-		D46DADB431044BEC99E4621F /* PushbotsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushbotsDelegate.h; path = com.pushbots.push/PushbotsDelegate.h; sourceTree = "<group>"; };
+		A52FA723B4D5483BB1355638 /* PushbotsPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushbotsPlugin.m; path = com.pushbots.push/PushbotsPlugin.m; sourceTree = "<group>"; };
+		B4771B26B30E4BCA8492EEF9 /* CoreTelephony.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
-		EA2A37A4321D42B6A5CA42F1 /* CoreTelephony.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
@@ -130,10 +130,10 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
-				5D6E45A5B7F44189BBD2FEDC /* Pushbots.framework in Frameworks */,
-				A6E67F507CF24670B629F52A /* CoreLocation.framework in Frameworks */,
-				9E64F1026754434BBB4B0FE7 /* SystemConfiguration.framework in Frameworks */,
-				26D51A64E3E049AC91243897 /* CoreTelephony.framework in Frameworks */,
+				2A750AD80A3846E6A5A4B4F9 /* Pushbots.framework in Frameworks */,
+				B2987F8C0FF5479D9B1EB433 /* CoreLocation.framework in Frameworks */,
+				E419432A6B5347C4BCECD343 /* SystemConfiguration.framework in Frameworks */,
+				3E81CDE201F343C884946012 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,10 +206,10 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
-				6869E504E3B342FF8529D315 /* Pushbots.framework */,
-				4BE71F78DA6A46808CE84044 /* CoreLocation.framework */,
-				B920DBD711634703B965D4F9 /* SystemConfiguration.framework */,
-				EA2A37A4321D42B6A5CA42F1 /* CoreTelephony.framework */,
+				6854DE907C9B4A31B9A31C53 /* Pushbots.framework */,
+				61EA002B7545454A8014FB1A /* CoreLocation.framework */,
+				847AE8C4871D4DF8A54A17E9 /* SystemConfiguration.framework */,
+				B4771B26B30E4BCA8492EEF9 /* CoreTelephony.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,12 +225,12 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				D17F09A67F034D41A9317628 /* PushbotsDelegate.m */,
-				9FC1F37A4439473FA03450F0 /* PushbotsPlugin.m */,
-				D46DADB431044BEC99E4621F /* PushbotsDelegate.h */,
-				C83EB52024CB4E9CB9EDB855 /* PushbotsPlugin.h */,
 				602E2AB4802541A4B6C7B082 /* CarrierPlugin.m */,
 				597AB50E38E64C2F9AD4E963 /* CarrierPlugin.h */,
+				7B2596F67C3B460BAAF4EF40 /* PushbotsDelegate.m */,
+				A52FA723B4D5483BB1355638 /* PushbotsPlugin.m */,
+				83240CBC1EA44A4DA81B4A8F /* PushbotsDelegate.h */,
+				4900D092EE5741838D61F97B /* PushbotsPlugin.h */,
 			);
 			name = Plugins;
 			path = ComfortUnifr/Plugins;
@@ -415,9 +415,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				70AD3FC1A96F44A28C56B9DD /* PushbotsDelegate.m in Sources */,
-				463082D210F14EE4818B10DC /* PushbotsPlugin.m in Sources */,
 				29E13A187DA24E55B99F9679 /* CarrierPlugin.m in Sources */,
+				9CAB7FD48FFF42BD953EB736 /* PushbotsDelegate.m in Sources */,
+				820D8D876E464F14AC7BA080 /* PushbotsPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +441,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"ComfortUnifr/Plugins/com.pushbots.push\"",
 					"\"ComfortUnifr/Plugins/com.pushbots.push\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -483,6 +484,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"ComfortUnifr/Plugins/com.pushbots.push\"",
+					"\"ComfortUnifr/Plugins/com.pushbots.push\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComfortUnifr/ComfortUnifr-Prefix.pch";
@@ -521,7 +523,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Roman Kupper (495Q32F389)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roman Kupper (495Q32F389)";
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -551,6 +554,7 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
+				PROVISIONING_PROFILE = "c610bbba-41c8-4028-acd5-cd29cb02d40a";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -567,7 +571,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Roman Kupper (495Q32F389)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roman Kupper (495Q32F389)";
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
@@ -595,6 +600,7 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
+				PROVISIONING_PROFILE = "c610bbba-41c8-4028-acd5-cd29cb02d40a";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
